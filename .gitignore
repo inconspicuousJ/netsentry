@@ -1,0 +1,40 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+
+# --- Tooling caches ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Packet captures ---
+# Real captures can contain private data (IP addresses, DNS history,
+# cleartext credentials). They are never committed. Synthetic demo captures
+# are regenerated locally with: python samples/generate_samples.py
+*.pcap
+*.pcapng
+*.cap
+*.pcap.gz
+*.pcapng.gz
+
+# --- Reports ---
+# Reports contain addresses and domain names taken from captures.
+reports/
+*.report.json
+*.report.txt
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
