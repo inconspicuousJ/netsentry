@@ -1,0 +1,6 @@
+# Runtime dependencies for NetSentry.
+# Tested with: Python 3.13, scapy 2.8.0, rich 14.3.4.
+# The lower bound on scapy matters: 2.8 bounds the read size of a capture
+# record, which protects against malicious length fields in hostile files.
+scapy>=2.8,<3
+rich>=13.7,<15
